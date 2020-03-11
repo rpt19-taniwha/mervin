@@ -1,4 +1,5 @@
 import Test from './components/test.jsx'
+import Category from './components/Category.jsx'
 
 class App extends React.Component {
   constructor() {
@@ -9,6 +10,7 @@ class App extends React.Component {
     return (
       <div>
         <div>APP</div>
+        <Category/>
         <Test/>
       </div>
     )
