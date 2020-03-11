@@ -1,4 +1,4 @@
-import Test from './components/test.jsx'
+import Review from './components/review.jsx'
 
 class App extends React.Component {
   constructor() {
@@ -8,8 +8,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div>APP</div>
-        <Test/>
+        <Review/>
       </div>
     )
   }
