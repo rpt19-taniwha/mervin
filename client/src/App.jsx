@@ -2,6 +2,7 @@ import Category from './components/Category.jsx'
 import Review from './components/Review.jsx'
 import Price from './components/Price.jsx'
 import Name from './components/Name.jsx'
+import Selection from './components/Selection.jsx'
 
 class App extends React.Component {
   constructor() {
@@ -16,6 +17,7 @@ class App extends React.Component {
         <Review/>
         <Name/>
         <Price/>
+        <Selection/>
       </div>
     )
   }
