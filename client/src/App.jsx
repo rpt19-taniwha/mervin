@@ -1,5 +1,6 @@
 import Category from './components/Category.jsx'
-import Review from './components/review.jsx'
+import Review from './components/Review.jsx'
+import Price from './components/Price.jsx'
 
 class App extends React.Component {
   constructor() {
@@ -12,6 +13,7 @@ class App extends React.Component {
         <div>APP</div>
         <Category/>
         <Review/>
+        <Price/>
       </div>
     )
   }
