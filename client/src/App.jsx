@@ -1,3 +1,4 @@
+import Category from './components/Category.jsx'
 import Review from './components/review.jsx'
 
 class App extends React.Component {
@@ -8,6 +9,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <div>APP</div>
+        <Category/>
         <Review/>
       </div>
     )
