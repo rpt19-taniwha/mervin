@@ -1,3 +1,10 @@
 body {
   background-color: aquamarine;
 }
+
+.category-component {
+  font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+}
