@@ -25,4 +25,4 @@ var fetch = function(productNumber, callback) {
   })
 }
 
-module.exports = { save, fetch }
+module.exports = { save, fetch };
