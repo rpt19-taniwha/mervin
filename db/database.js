@@ -12,24 +12,17 @@ var ProductSchema = new Schema ({
 
 var ProductModel = mongoose.model('products', ProductSchema);
 
-// ProductModel.find(function(err, results) {
-//   console.log(results)
-// })
-
 var save = function() {
-  console.log('save')
+  console.log('save pending')
 }
-var fetch = function(productNumber) {
-  if (productNumber) {
-    ProductModel.find({productNumber}, function(err, results) {
-      console.log(results);
-    })
-  } else {
-    console.log('false')
-  }
-
+var fetch = function(productNumber, callback) {
+  ProductModel.find({ productNumber }, function(err, results) {
+    if (err) {
+      console.log(err);
+    } else {
+      callback(results);
+    }
+  })
 }
-
-fetch("90857");
 
 module.exports = { save, fetch }
