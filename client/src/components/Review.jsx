@@ -7,7 +7,7 @@ class Review extends React.Component {
     return (
       // Placeholder for Iris's Review Service
       <div className="review-container">
-        ⭐⭐⭐⭐⭐
+        ⭐⭐⭐⭐⭐ (1599)
       </div>
     )
   }
