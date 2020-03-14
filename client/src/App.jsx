@@ -3,6 +3,9 @@ import Review from './components/Review.jsx'
 import Price from './components/Price.jsx'
 import Name from './components/Name.jsx'
 import Selection from './components/Selection.jsx'
+import Distribution from './components/Distribution.jsx'
+import Highlight from './components/Highlight.jsx'
+import Description from './components/Description.jsx'
 
 class App extends React.Component {
   constructor() {
@@ -11,13 +14,17 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <div>APP</div>
-        <Category/>
-        <Review/>
+      <div className="product-service-container col-sm-4 col-md-4 col-lg-4">
+        <div className="category-review-wrapper">
+          <Category/>
+          <Review/>
+        </div>
         <Name/>
         <Price/>
         <Selection/>
+        <Distribution/>
+        <Highlight/>
+        <Description/>
       </div>
     )
   }
