@@ -7,9 +7,21 @@ import Distribution from './components/Distribution.jsx'
 import Highlight from './components/Highlight.jsx'
 import Description from './components/Description.jsx'
 
+
 class App extends React.Component {
   constructor() {
     super();
+  }
+
+  componentDidMount() {
+    console.log(document.location.pathname);
+    // $.ajax({
+    //   method: 'GET',
+    //   url: 'localhost/products/123',
+    //   success: function() {
+    //     console.log('works')
+    //   }
+    // })
   }
 
   render() {

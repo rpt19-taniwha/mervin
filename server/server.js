@@ -21,6 +21,10 @@ const db = require('../db/database.js');
 app.post('/products/:productNumber', function(req, res) {
   // Placeholder in case products will be able to be added for future use
 })
+app.get('/:productNumber', function(req, res) {
+  console.log(req.params.productNumber)
+  res.send(req.params.productNumber)
+})
 app.get('/products/:productNumber', function(req, res) {
   var productNumber = req.params.productNumber;
   db.fetch(productNumber, function(results) {
