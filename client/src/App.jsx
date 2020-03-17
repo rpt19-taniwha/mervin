@@ -11,6 +11,8 @@ import Description from './components/Description.jsx'
 class App extends React.Component {
   constructor() {
     super();
+    this.state = {};
+
   }
 
   componentDidMount() {
