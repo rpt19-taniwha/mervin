@@ -6,6 +6,7 @@ import Selection from './components/Selection.jsx'
 import Distribution from './components/Distribution.jsx'
 import Highlight from './components/Highlight.jsx'
 import Description from './components/Description.jsx'
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 
 class App extends React.Component {
@@ -28,6 +29,8 @@ class App extends React.Component {
 
   render() {
     return (
+      <Router>
+
       <div className="product-service-container col-sm-4 col-md-4 col-lg-4">
         <div className="category-review-wrapper">
           <Category/>
@@ -40,6 +43,8 @@ class App extends React.Component {
         <Highlight/>
         <Description/>
       </div>
+      </Router>
+
     )
   }
 }
