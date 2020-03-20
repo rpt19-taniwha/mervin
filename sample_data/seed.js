@@ -1,0 +1,24 @@
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+mongoose.connect('mongodb://localhost/fec', {useNewUrlParser: true, useUnifiedTopology: true });
+const fs = require('fs');
+
+var ProductSchema = new Schema ({
+  productNumber: { type: Number, required: true },
+  productName: String,
+  productDescription: String,
+  productCategory: String,
+})
+
+var ProductModel = mongoose.model('products', ProductSchema);
+
+var data = JSON.parse(fs.readFileSync(__dirname + '/sample_products.json', 'utf8'))
+
+ProductModel.insertMany(data, function(error, docs) {
+  if (error) {
+    console.log('Error seeding database');
+  } else {
+    console.log('Successfully seeded database');
+  }
+})
+
