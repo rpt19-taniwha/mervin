@@ -22,21 +22,19 @@ app.post('/products/:productNumber', function(req, res) {
   // Placeholder in case products will be able to be added for future use
 })
 app.get('/listing/:productNumber', function(req, res) {
-  console.log('test', req.params.productNumber, 'endtest')
-  // res.send(req.params.productNumber)
-  // // res.send('index')
-
   res.sendFile('index.html', {
     root: __dirname + '/../client/dist/'
   });
 
 })
+
 app.get('/products/:productNumber', function(req, res) {
   var productNumber = req.params.productNumber;
   db.fetch(productNumber, function(results) {
-    res.send(results)
+    res.send(results[0])
   })
 })
+
 app.get('/products/:productNumber/name', function(req, res) {
 
 })

@@ -6,34 +6,34 @@ import Selection from './components/Selection.jsx'
 import Distribution from './components/Distribution.jsx'
 import Highlight from './components/Highlight.jsx'
 import Description from './components/Description.jsx'
-import {BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-
+import $ from 'jquery'
+import {BrowserRouter as Router, Switch, Route, Link, BrowserRouter } from 'react-router-dom'
+import productParser from './components/helper/helper.js'
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {};
-
   }
 
   componentDidMount() {
     console.log(document.location.pathname);
-    // $.ajax({
-    //   method: 'GET',
-    //   url: 'localhost/products/123',
-    //   success: function() {
-    //     console.log('works')
-    //   }
-    // })
+    var productNumber = productParser(document.location.pathname)
+    $.ajax({
+      method: 'GET',
+      url: `/products/${productNumber}`,
+      success: function(results) {
+        console.log(results)
+        this.setState(results)
+      }.bind(this)
+    })
   }
 
   render() {
     return (
-      <Router>
-
       <div className="product-service-container col-sm-4 col-md-4 col-lg-4">
         <div className="category-review-wrapper">
-          <Category/>
+          <Category product={this.state}/>
           <Review/>
         </div>
         <Name/>
@@ -43,8 +43,6 @@ class App extends React.Component {
         <Highlight/>
         <Description/>
       </div>
-      </Router>
-
     )
   }
 }
