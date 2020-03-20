@@ -13,7 +13,13 @@ import productParser from './components/helper/helper.js'
 class App extends React.Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      productNumber: 0,
+      productName: '',
+      productDescription: '',
+      productCategory: '',
+      versions: {}
+    }
   }
 
   componentDidMount() {
@@ -36,12 +42,12 @@ class App extends React.Component {
           <Category product={this.state}/>
           <Review/>
         </div>
-        <Name/>
+        <Name product={this.state}/>
         <Price/>
-        <Selection/>
+        <Selection product={this.state}/>
         <Distribution/>
-        <Highlight/>
-        <Description/>
+        <Highlight product={this.state}/>
+        <Description product={this.state}/>
       </div>
     )
   }

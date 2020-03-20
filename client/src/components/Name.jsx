@@ -1,12 +1,12 @@
 class Name extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
   }
 
   render() {
     return (
       <div className="name-component">
-        PokéNatomy: The Science of Pokémon (An Unofficial Guide)
+        {this.props.product.productName}
       </div>
     )
   }
