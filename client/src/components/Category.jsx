@@ -1,12 +1,12 @@
 class Category extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
   }
 
   render() {
     return (
       <div className="category-component">
-        MultiverseBooks
+        {this.props.product.productCategory}
       </div>
     )
   }

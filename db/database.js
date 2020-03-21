@@ -15,6 +15,7 @@ var ProductModel = mongoose.model('products', ProductSchema);
 var save = function() {
   console.log('save pending')
 }
+
 var fetch = function(productNumber, callback) {
   ProductModel.find({ productNumber }, function(err, results) {
     if (err) {
