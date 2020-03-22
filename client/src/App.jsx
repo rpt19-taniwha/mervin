@@ -1,9 +1,9 @@
-import Review from './components/Review.jsx'
-import Price from './components/Price.jsx'
-import Selection from './components/Selection.jsx'
-import Distribution from './components/Distribution.jsx'
-import Highlight from './components/Highlight.jsx'
-import $ from 'jquery'
+import Review from './components/Review.jsx';
+import Price from './components/Price.jsx';
+import Selection from './components/Selection.jsx';
+import Distribution from './components/Distribution.jsx';
+import Highlight from './components/Highlight.jsx';
+import $ from 'jquery';
 
 class App extends React.Component {
   constructor() {
