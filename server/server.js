@@ -23,7 +23,7 @@ app.get('/listing/:productNumber', (req, res) => {
   });
 });
 app.get('/products/:productNumber', (req, res) => {
-  const productNumber = req.params.productNumber;
+  const { productNumber } = req.params;
   db.fetch(productNumber, (results) => {
     res.send(results[0]);
   });

@@ -1,7 +1,7 @@
 // MONGOOSE
 const mongoose = require('mongoose');
 
-const Schema = mongoose.Schema;
+const { Schema } = mongoose;
 mongoose.connect('mongodb://localhost/fec', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const ProductSchema = new Schema({
@@ -15,7 +15,7 @@ const ProductSchema = new Schema({
 const ProductModel = mongoose.model('products', ProductSchema);
 
 const fetch = (productNumber, callback) => {
-  ProductModel.find({ productNumber }, function (err, results) {
+  ProductModel.find({ productNumber }, (err, results) => {
     if (err) {
       throw err;
     } else {
