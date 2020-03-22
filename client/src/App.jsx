@@ -7,7 +7,6 @@ import Distribution from './components/Distribution.jsx'
 import Highlight from './components/Highlight.jsx'
 import Description from './components/Description.jsx'
 import $ from 'jquery'
-import {BrowserRouter as Router, Switch, Route, Link, BrowserRouter } from 'react-router-dom'
 import productParser from './components/helper/helper.js'
 
 class App extends React.Component {

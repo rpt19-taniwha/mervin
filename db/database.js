@@ -7,23 +7,20 @@ var ProductSchema = new Schema ({
   productNumber: { type: Number, required: true },
   productName: String,
   productDescription: String,
-  productCategory: String
+  productCategory: String,
+  versions: {}
 })
 
 var ProductModel = mongoose.model('products', ProductSchema);
 
-var save = function() {
-  console.log('save pending')
-}
-
 var fetch = function(productNumber, callback) {
   ProductModel.find({ productNumber }, function(err, results) {
     if (err) {
-      console.log(err);
+      throw err;
     } else {
       callback(results);
     }
   })
 }
 
-module.exports = { save, fetch };
+module.exports = { fetch };

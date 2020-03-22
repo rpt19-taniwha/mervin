@@ -16,7 +16,6 @@ app.listen(port, function() {
 // DATABASE
 const db = require('../db/database.js');
 
-
 // ROUTES
 app.post('/products/:productNumber', function(req, res) {
   // Placeholder in case products will be able to be added for future use
@@ -25,24 +24,12 @@ app.get('/listing/:productNumber', function(req, res) {
   res.sendFile('index.html', {
     root: __dirname + '/../client/dist/'
   });
-
 })
-
 app.get('/products/:productNumber', function(req, res) {
   var productNumber = req.params.productNumber;
   db.fetch(productNumber, function(results) {
     res.send(results[0])
   })
-})
-
-app.get('/products/:productNumber/name', function(req, res) {
-
-})
-app.get('/products/:productNumber/description', function(req, res) {
-  // Placeholder in case description will be used for image servce as alt text for future use
-})
-app.get('/products/:productNumber/metadata', function(req, res) {
-  // Placeholder in case metadata will be used to sort similar products for future use
 })
 
 
