@@ -7,7 +7,6 @@ import Distribution from './components/Distribution.jsx'
 import Highlight from './components/Highlight.jsx'
 import Description from './components/Description.jsx'
 import $ from 'jquery'
-import productParser from './components/helper/helper.js'
 
 class App extends React.Component {
   constructor() {
@@ -22,8 +21,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    console.log(document.location.pathname);
-    var productNumber = productParser(document.location.pathname)
+    var productNumber = document.location.pathname.split('/')[2]
     $.ajax({
       method: 'GET',
       url: `/products/${productNumber}`,
