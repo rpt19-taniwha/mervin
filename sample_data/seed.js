@@ -8,11 +8,15 @@ var ProductSchema = new Schema ({
   productName: String,
   productDescription: String,
   productCategory: String,
+  versions: {}
 })
 
 var ProductModel = mongoose.model('products', ProductSchema);
 
 var data = JSON.parse(fs.readFileSync(__dirname + '/sample_products.json', 'utf8'))
+
+// Drop collection
+mongoose.connection.collections['products'].drop();
 
 ProductModel.insertMany(data, function(error, docs) {
   if (error) {

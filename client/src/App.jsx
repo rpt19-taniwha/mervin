@@ -1,14 +1,9 @@
-import Category from './components/Category.jsx'
-import Review from './components/Review.jsx'
-import Price from './components/Price.jsx'
-import Name from './components/Name.jsx'
-import Selection from './components/Selection.jsx'
-import Distribution from './components/Distribution.jsx'
-import Highlight from './components/Highlight.jsx'
-import Description from './components/Description.jsx'
-import $ from 'jquery'
-import {BrowserRouter as Router, Switch, Route, Link, BrowserRouter } from 'react-router-dom'
-import productParser from './components/helper/helper.js'
+import Review from './components/Review.jsx';
+import Price from './components/Price.jsx';
+import Selection from './components/Selection.jsx';
+import Distribution from './components/Distribution.jsx';
+import Highlight from './components/Highlight.jsx';
+import $ from 'jquery';
 
 class App extends React.Component {
   constructor() {
@@ -23,8 +18,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    console.log(document.location.pathname);
-    var productNumber = productParser(document.location.pathname)
+    var productNumber = document.location.pathname.split('/')[2]
     $.ajax({
       method: 'GET',
       url: `/products/${productNumber}`,
@@ -39,15 +33,21 @@ class App extends React.Component {
     return (
       <div className="product-service-container col-sm-4 col-md-4 col-lg-4">
         <div className="category-review-wrapper">
-          <Category product={this.state}/>
+          <div className="category-component">
+            {this.state.productCategory}
+          </div>
           <Review/>
         </div>
-        <Name product={this.state}/>
+          <div className="name-component">
+            {this.state.productName}
+          </div>
         <Price/>
         <Selection product={this.state}/>
         <Distribution/>
         <Highlight product={this.state}/>
-        <Description product={this.state}/>
+        <div className="description-component">
+          {this.state.productDescription}
+        </div>
       </div>
     )
   }

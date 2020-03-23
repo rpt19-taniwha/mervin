@@ -1,29 +1,27 @@
 // MONGOOSE
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
-mongoose.connect('mongodb://localhost/fec', {useNewUrlParser: true, useUnifiedTopology: true });
 
-var ProductSchema = new Schema ({
+const { Schema } = mongoose;
+mongoose.connect('mongodb://localhost/fec', { useNewUrlParser: true, useUnifiedTopology: true });
+
+const ProductSchema = new Schema({
   productNumber: { type: Number, required: true },
   productName: String,
   productDescription: String,
-  productCategory: String
-})
+  productCategory: String,
+  versions: {},
+});
 
-var ProductModel = mongoose.model('products', ProductSchema);
+const ProductModel = mongoose.model('products', ProductSchema);
 
-var save = function() {
-  console.log('save pending')
-}
-
-var fetch = function(productNumber, callback) {
-  ProductModel.find({ productNumber }, function(err, results) {
+const fetch = (productNumber, callback) => {
+  ProductModel.find({ productNumber }, (err, results) => {
     if (err) {
-      console.log(err);
+      throw err;
     } else {
       callback(results);
     }
-  })
-}
+  });
+};
 
-module.exports = { save, fetch };
+module.exports = { fetch };
