@@ -8,7 +8,8 @@ var ProductSchema = new Schema ({
   productName: String,
   productDescription: String,
   productCategory: String,
-  versions: {}
+  versions: {},
+  storeNumber: Number
 })
 
 var ProductModel = mongoose.model('products', ProductSchema);
