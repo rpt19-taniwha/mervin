@@ -18,7 +18,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    var productNumber = document.location.pathname.split('/')[2]
+    var productNumber = window.location.pathname.split('/')[2]
     $.ajax({
       method: 'GET',
       url: `/products/${productNumber}`,
