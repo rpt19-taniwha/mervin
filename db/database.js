@@ -10,6 +10,7 @@ const ProductSchema = new Schema({
   productDescription: String,
   productCategory: String,
   versions: {},
+  storeNumber: Number
 });
 
 const ProductModel = mongoose.model('products', ProductSchema);

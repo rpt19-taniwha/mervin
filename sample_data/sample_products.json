@@ -6,14 +6,13 @@
     "productCategory": "MultiverseBooks",
     "versions": {
       "style": [
-        {
-          "name": "Leatherbound Edition",
+        { "name": "Leatherbound Edition",
           "metaData": [
             "Pokemon",
             "Guide",
             "Handmade",
             "Leather"
-          ]
+           ]
         },
         {
           "name": "Hardcover Edition",
@@ -25,7 +24,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 59
   },
   {
     "productNumber": 57394,
@@ -84,7 +84,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 85
   },
   {
     "productNumber": 65178,
@@ -125,7 +126,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 93
   },
   {
     "productNumber": 60159,
@@ -165,7 +167,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 27
   },
   {
     "productNumber": 60038,
@@ -187,7 +190,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 53
   },
   {
     "productNumber": 44486,
@@ -247,7 +251,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 60
   },
   {
     "productNumber": 3356,
@@ -261,7 +266,8 @@
           "metaData": [ "Ergonomic", "Awesome", "Intelligent", "Generic", "Awesome" ]
         }
       ]
-    }
+    },
+    "storeNumber": 58
   },
   {
     "productNumber": 3394,
@@ -286,7 +292,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 64
   },
   {
     "productNumber": 93834,
@@ -295,7 +302,8 @@
     "productCategory": "Outdoors",
     "versions": {
       "style": [ { "name": "Refined", "metaData": [ "Fantastic", "Ergonomic" ] } ]
-    }
+    },
+    "storeNumber": 45
   },
   {
     "productNumber": 37328,
@@ -319,7 +327,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 54
   },
   {
     "productNumber": 81782,
@@ -376,14 +385,16 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 53
   },
   {
     "productNumber": 3197,
     "productName": "Unbranded Plastic Towels",
     "productDescription": "Ut aute do sunt excepteur deserunt tempor occaecat labore. Cillum ut commodo laboris deserunt qui. Labore commodo esse sunt qui aute aute sint Lorem id dolore. Laborum ipsum occaecat dolor minim deserunt officia.\nSint laborum pariatur aute adipisicing sunt elit nisi dolore excepteur. Est dolor ullamco aute pariatur duis dolor ea nostrud est veniam veniam Lorem id commodo. Et est et cillum occaecat incididunt elit reprehenderit proident sint ipsum occaecat. Fugiat anim esse aliqua laborum dolor culpa. Amet officia irure deserunt anim.",
     "productCategory": "Clothing",
-    "versions": { "style": [ { "name": "Ergonomic", "metaData": [ "Refined" ] } ] }
+    "versions": { "style": [ { "name": "Ergonomic", "metaData": [ "Refined" ] } ] },
+    "storeNumber": 22
   },
   {
     "productNumber": 47295,
@@ -425,7 +436,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 84
   },
   {
     "productNumber": 60331,
@@ -462,7 +474,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 32
   },
   {
     "productNumber": 64167,
@@ -500,7 +513,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 64
   },
   {
     "productNumber": 55895,
@@ -526,7 +540,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 29
   },
   {
     "productNumber": 94802,
@@ -565,7 +580,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 48
   },
   {
     "productNumber": 92004,
@@ -590,7 +606,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 77
   },
   {
     "productNumber": 95424,
@@ -624,7 +641,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 6
   },
   {
     "productNumber": 85963,
@@ -694,7 +712,8 @@
         },
         { "name": "Licensed", "metaData": [ "Ergonomic", "Refined" ] }
       ]
-    }
+    },
+    "storeNumber": 36
   },
   {
     "productNumber": 63174,
@@ -724,7 +743,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 59
   },
   {
     "productNumber": 12202,
@@ -762,7 +782,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 19
   },
   {
     "productNumber": 41349,
@@ -776,7 +797,8 @@
           "metaData": [ "Handmade", "Tasty", "Handcrafted", "Awesome" ]
         }
       ]
-    }
+    },
+    "storeNumber": 59
   },
   {
     "productNumber": 3248,
@@ -802,7 +824,8 @@
         { "name": "Incredible", "metaData": [ "Incredible", "Tasty" ] },
         { "name": "Generic", "metaData": [ "Unbranded", "Small", "Generic" ] }
       ]
-    }
+    },
+    "storeNumber": 91
   },
   {
     "productNumber": 90783,
@@ -828,7 +851,8 @@
           "metaData": [ "Unbranded", "Ergonomic", "Fantastic", "Practical" ]
         }
       ]
-    }
+    },
+    "storeNumber": 51
   },
   {
     "productNumber": 18079,
@@ -877,7 +901,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 94
   },
   {
     "productNumber": 97520,
@@ -926,7 +951,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 59
   },
   {
     "productNumber": 36369,
@@ -954,7 +980,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 51
   },
   {
     "productNumber": 84385,
@@ -991,7 +1018,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 77
   },
   {
     "productNumber": 66607,
@@ -1044,7 +1072,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 48
   },
   {
     "productNumber": 12894,
@@ -1076,7 +1105,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 29
   },
   {
     "productNumber": 64760,
@@ -1112,7 +1142,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 95
   },
   {
     "productNumber": 92742,
@@ -1147,7 +1178,8 @@
         { "name": "Intelligent", "metaData": [ "Handmade" ] },
         { "name": "Handcrafted", "metaData": [ "Handmade" ] }
       ]
-    }
+    },
+    "storeNumber": 24
   },
   {
     "productNumber": 97296,
@@ -1206,7 +1238,8 @@
         },
         { "name": "Handmade", "metaData": [ "Fantastic" ] }
       ]
-    }
+    },
+    "storeNumber": 96
   },
   {
     "productNumber": 23257,
@@ -1260,7 +1293,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 64
   },
   {
     "productNumber": 42926,
@@ -1320,7 +1354,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 54
   },
   {
     "productNumber": 56632,
@@ -1343,7 +1378,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 17
   },
   {
     "productNumber": 56244,
@@ -1373,7 +1409,8 @@
           "metaData": [ "Tasty", "Handcrafted", "Handcrafted", "Handcrafted" ]
         }
       ]
-    }
+    },
+    "storeNumber": 25
   },
   {
     "productNumber": 132,
@@ -1413,7 +1450,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 46
   },
   {
     "productNumber": 10385,
@@ -1440,7 +1478,8 @@
           "metaData": [ "Fantastic", "Fantastic", "Licensed", "Refined", "Gorgeous" ]
         }
       ]
-    }
+    },
+    "storeNumber": 12
   },
   {
     "productNumber": 10755,
@@ -1456,7 +1495,8 @@
           "metaData": [ "Ergonomic", "Rustic", "Tasty", "Small", "Tasty", "Licensed" ]
         }
       ]
-    }
+    },
+    "storeNumber": 46
   },
   {
     "productNumber": 32758,
@@ -1488,7 +1528,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 53
   },
   {
     "productNumber": 41846,
@@ -1519,7 +1560,8 @@
         { "name": "Refined", "metaData": [ "Practical" ] },
         { "name": "Gorgeous", "metaData": [ "Handmade", "Sleek" ] }
       ]
-    }
+    },
+    "storeNumber": 93
   },
   {
     "productNumber": 14551,
@@ -1535,7 +1577,8 @@
           "metaData": [ "Ergonomic", "Practical", "Unbranded", "Handcrafted", "Licensed" ]
         }
       ]
-    }
+    },
+    "storeNumber": 32
   },
   {
     "productNumber": 47371,
@@ -1585,7 +1628,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 43
   },
   {
     "productNumber": 73110,
@@ -1614,7 +1658,8 @@
           "metaData": [ "Sleek", "Sleek", "Rustic", "Incredible" ]
         }
       ]
-    }
+    },
+    "storeNumber": 50
   },
   {
     "productNumber": 19551,
@@ -1628,7 +1673,8 @@
           "metaData": [ "Unbranded", "Fantastic", "Handcrafted" ]
         }
       ]
-    }
+    },
+    "storeNumber": 23
   },
   {
     "productNumber": 65821,
@@ -1656,7 +1702,8 @@
           "metaData": [ "Incredible", "Refined", "Gorgeous", "Ergonomic", "Small" ]
         }
       ]
-    }
+    },
+    "storeNumber": 24
   },
   {
     "productNumber": 21055,
@@ -1730,7 +1777,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 97
   },
   {
     "productNumber": 16884,
@@ -1781,7 +1829,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 87
   },
   {
     "productNumber": 36954,
@@ -1823,7 +1872,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 85
   },
   {
     "productNumber": 19794,
@@ -1837,7 +1887,8 @@
           "metaData": [ "Sleek", "Unbranded", "Awesome" ]
         }
       ]
-    }
+    },
+    "storeNumber": 39
   },
   {
     "productNumber": 729,
@@ -1871,7 +1922,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 21
   },
   {
     "productNumber": 38274,
@@ -1922,7 +1974,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 75
   },
   {
     "productNumber": 16262,
@@ -1952,7 +2005,8 @@
           "metaData": [ "Practical", "Rustic", "Generic", "Handmade" ]
         }
       ]
-    }
+    },
+    "storeNumber": 33
   },
   {
     "productNumber": 20602,
@@ -1974,7 +2028,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 18
   },
   {
     "productNumber": 52456,
@@ -2000,7 +2055,8 @@
           "metaData": [ "Refined", "Gorgeous", "Handmade", "Sleek", "Fantastic" ]
         }
       ]
-    }
+    },
+    "storeNumber": 83
   },
   {
     "productNumber": 78068,
@@ -2027,7 +2083,8 @@
           "metaData": [ "Practical", "Fantastic", "Handcrafted" ]
         }
       ]
-    }
+    },
+    "storeNumber": 70
   },
   {
     "productNumber": 49740,
@@ -2107,7 +2164,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 55
   },
   {
     "productNumber": 79155,
@@ -2144,7 +2202,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 81
   },
   {
     "productNumber": 91002,
@@ -2171,7 +2230,8 @@
           "metaData": [ "Licensed", "Licensed", "Unbranded" ]
         }
       ]
-    }
+    },
+    "storeNumber": 69
   },
   {
     "productNumber": 39800,
@@ -2213,7 +2273,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 97
   },
   {
     "productNumber": 83768,
@@ -2251,7 +2312,8 @@
           "metaData": [ "Tasty", "Small", "Handcrafted", "Handmade", "Rustic", "Refined" ]
         }
       ]
-    }
+    },
+    "storeNumber": 28
   },
   {
     "productNumber": 95450,
@@ -2273,7 +2335,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 8
   },
   {
     "productNumber": 16116,
@@ -2287,7 +2350,8 @@
           "metaData": [ "Handcrafted", "Licensed", "Sleek" ]
         }
       ]
-    }
+    },
+    "storeNumber": 81
   },
   {
     "productNumber": 65558,
@@ -2330,7 +2394,8 @@
           "metaData": [ "Unbranded", "Unbranded", "Intelligent", "Unbranded" ]
         }
       ]
-    }
+    },
+    "storeNumber": 18
   },
   {
     "productNumber": 40271,
@@ -2357,7 +2422,8 @@
           "metaData": [ "Gorgeous", "Ergonomic", "Fantastic", "Fantastic" ]
         }
       ]
-    }
+    },
+    "storeNumber": 28
   },
   {
     "productNumber": 79116,
@@ -2380,7 +2446,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 68
   },
   {
     "productNumber": 35076,
@@ -2419,7 +2486,8 @@
         },
         { "name": "Small", "metaData": [ "Ergonomic" ] }
       ]
-    }
+    },
+    "storeNumber": 95
   },
   {
     "productNumber": 31486,
@@ -2472,7 +2540,8 @@
         },
         { "name": "Generic", "metaData": [ "Practical", "Small" ] }
       ]
-    }
+    },
+    "storeNumber": 70
   },
   {
     "productNumber": 68780,
@@ -2529,7 +2598,8 @@
         },
         { "name": "Tasty", "metaData": [ "Sleek", "Rustic" ] }
       ]
-    }
+    },
+    "storeNumber": 83
   },
   {
     "productNumber": 5986,
@@ -2584,7 +2654,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 61
   },
   {
     "productNumber": 15882,
@@ -2616,7 +2687,8 @@
           "metaData": [ "Rustic", "Fantastic", "Licensed" ]
         }
       ]
-    }
+    },
+    "storeNumber": 82
   },
   {
     "productNumber": 34124,
@@ -2647,7 +2719,8 @@
           "metaData": [ "Licensed", "Rustic", "Generic", "Handmade" ]
         }
       ]
-    }
+    },
+    "storeNumber": 42
   },
   {
     "productNumber": 47602,
@@ -2709,7 +2782,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 70
   },
   {
     "productNumber": 98332,
@@ -2731,7 +2805,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 99
   },
   {
     "productNumber": 17767,
@@ -2768,7 +2843,8 @@
           "metaData": [ "Tasty", "Gorgeous", "Intelligent" ]
         }
       ]
-    }
+    },
+    "storeNumber": 66
   },
   {
     "productNumber": 31833,
@@ -2805,7 +2881,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 80
   },
   {
     "productNumber": 97078,
@@ -2854,7 +2931,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 43
   },
   {
     "productNumber": 82625,
@@ -2889,7 +2967,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 12
   },
   {
     "productNumber": 31138,
@@ -2923,7 +3002,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 67
   },
   {
     "productNumber": 35083,
@@ -2937,7 +3017,8 @@
           "metaData": [ "Refined", "Handcrafted", "Fantastic", "Licensed" ]
         }
       ]
-    }
+    },
+    "storeNumber": 9
   },
   {
     "productNumber": 29001,
@@ -2958,7 +3039,8 @@
         { "name": "Ergonomic", "metaData": [ "Handmade", "Handmade" ] },
         { "name": "Sleek", "metaData": [ "Awesome", "Fantastic", "Small" ] }
       ]
-    }
+    },
+    "storeNumber": 53
   },
   {
     "productNumber": 5850,
@@ -3004,7 +3086,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 41
   },
   {
     "productNumber": 15311,
@@ -3041,7 +3124,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 43
   },
   {
     "productNumber": 10260,
@@ -3100,7 +3184,8 @@
           "metaData": [ "Small", "Licensed", "Handcrafted" ]
         }
       ]
-    }
+    },
+    "storeNumber": 83
   },
   {
     "productNumber": 3073,
@@ -3146,7 +3231,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 57
   },
   {
     "productNumber": 43756,
@@ -3175,7 +3261,8 @@
           "metaData": [ "Intelligent", "Generic", "Rustic", "Handmade", "Small" ]
         }
       ]
-    }
+    },
+    "storeNumber": 73
   },
   {
     "productNumber": 59674,
@@ -3227,7 +3314,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 68
   },
   {
     "productNumber": 36353,
@@ -3239,7 +3327,8 @@
         { "name": "Gorgeous", "metaData": [ "Awesome" ] },
         { "name": "Tasty", "metaData": [ "Refined", "Tasty" ] }
       ]
-    }
+    },
+    "storeNumber": 52
   },
   {
     "productNumber": 61271,
@@ -3263,7 +3352,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 48
   },
   {
     "productNumber": 46666,
@@ -3277,7 +3367,8 @@
           "metaData": [ "Unbranded", "Sleek", "Practical" ]
         }
       ]
-    }
+    },
+    "storeNumber": 29
   },
   {
     "productNumber": 80093,
@@ -3300,7 +3391,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 46
   },
   {
     "productNumber": 84254,
@@ -3335,7 +3427,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 13
   },
   {
     "productNumber": 18926,
@@ -3360,7 +3453,8 @@
         },
         { "name": "Unbranded", "metaData": [ "Tasty" ] }
       ]
-    }
+    },
+    "storeNumber": 65
   },
   {
     "productNumber": 85889,
@@ -3389,7 +3483,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 21
   },
   {
     "productNumber": 47088,
@@ -3441,7 +3536,8 @@
           ]
         }
       ]
-    }
+    },
+    "storeNumber": 37
   },
   {
     "productNumber": 47480,
@@ -3471,7 +3567,8 @@
         },
         { "name": "Rustic", "metaData": [ "Handmade", "Incredible" ] }
       ]
-    }
+    },
+    "storeNumber": 94
   },
   {
     "productNumber": 49219,
@@ -3516,7 +3613,8 @@
           "metaData": [ "Incredible", "Incredible", "Intelligent", "Handmade" ]
         }
       ]
-    }
+    },
+    "storeNumber": 22
   },
   {
     "productNumber": 29755,
@@ -3545,6 +3643,7 @@
           "metaData": [ "Tasty", "Refined", "Tasty", "Generic", "Handmade" ]
         }
       ]
-    }
+    },
+    "storeNumber": 91
   }
 ]
