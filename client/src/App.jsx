@@ -21,7 +21,7 @@ class App extends React.Component {
     var productNumber = document.location.pathname.split('/')[2]
     $.ajax({
       method: 'GET',
-      url: `/products/${productNumber}`,
+      url: `http://127.0.0.1:9000/products/${productNumber}`,
       success: function(results) {
         console.log(results)
         this.setState(results)
