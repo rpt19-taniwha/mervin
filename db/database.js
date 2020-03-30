@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
-mongoose.connect('mongodb://localhost/fec', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://root:root@cluster0-zvbes.mongodb.net/fec?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const ProductSchema = new Schema({
   productNumber: { type: Number, required: true },
