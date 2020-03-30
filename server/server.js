@@ -7,7 +7,7 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, '/../client/src')));
+app.use(express.static(path.join(__dirname, '/../client/dist')));
 
 const port = process.env.PORT || 9000;
 
@@ -19,7 +19,7 @@ const db = require('../db/database.js');
 // ROUTES
 app.get('/listing/:productNumber', (req, res) => {
   res.sendFile('index.html', {
-    root: path.join(__dirname, '/../client/src/'),
+    root: path.join(__dirname, '/../client/dist/'),
   });
 });
 app.get('/products/:productNumber', (req, res) => {
