@@ -9,8 +9,8 @@ class Selection extends React.Component {
         {Object.keys(this.props.product.versions).map((version, index) => {
           return (
             <form key={index}>
-              <label className="selection-label col-sm-12 col-md-12 col-lg-12">{version.charAt(0).toUpperCase() + version.substring(1)}</label>
-              <select className="selection-dropdown col-sm-12 col-md-12 col-lg-12">
+              <label className="selection-label">{version.charAt(0).toUpperCase() + version.substring(1)}</label>
+              <select className="selection-dropdown">
                 <option>Select a {version}</option>
                 {this.props.product.versions[version].map((each, index) => {
                   return (<option key={index}>{each.name}</option>)
@@ -20,8 +20,8 @@ class Selection extends React.Component {
           )
         })}
         <form>
-          <label className="selection-label col-sm-12 col-md-12 col-lg-12">Quantity</label>
-          <select className="selection-dropdown col-sm-12 col-md-12 col-lg-12">
+          <label className="selection-label">Quantity</label>
+          <select className="selection-dropdown">
             <option>1</option>
             <option>2</option>
             <option>3</option>
@@ -29,7 +29,7 @@ class Selection extends React.Component {
           </select>
         </form>
 
-        <button className="selection-button col-sm-12 col-md-12 col-lg-12">Add to cart</button>
+        <button className="selection-button">Add to cart</button>
       </div>
     )
   }

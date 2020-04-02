@@ -16,7 +16,7 @@ const ProductSchema = new Schema({
 const ProductModel = mongoose.model('products', ProductSchema);
 
 const fetch = (productNumber, callback) => {
-  ProductModel.find({ productNumber }, (err, results) => {
+  ProductModel.findOne({ productNumber }, (err, results) => {
     if (err) {
       throw err;
     } else {
@@ -26,3 +26,7 @@ const fetch = (productNumber, callback) => {
 };
 
 module.exports = { fetch };
+
+// fetch(549504785, (results) => {
+//   console.log(results)
+// })
