@@ -1,7 +1,6 @@
 #product-service .product-service-container {
   width: 387.75px;
   padding: 0px 30px 0px 0px;
-  border: 1px solid black
 }
 /* CATEGORY/REVIEW */
 #product-service .category-review-wrapper {
@@ -75,7 +74,7 @@
 #product-service .selection-component {
   display: flex;
   flex-direction: column;
-  margin-bottom: 18px;
+
 }
 #product-service .dropdown-wrapper {
   margin-bottom: 18px;
@@ -110,59 +109,27 @@
 
 }
 #product-service .selection-button {
-  backface-visibility:hidden;
-  background-attachment:scroll;
-  background-clip:border-box;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+font-size:16px;
   background-color:rgb(34, 34, 34);
-  background-image:none;
-  background-origin:padding-box;
-  background-position-x:0%;
-  background-position-y:0%;
-  background-repeat-x:;
-  background-repeat-y:;
-  background-size:auto;
-  border-bottom-color:rgb(255, 255, 255);
+
+
   border-bottom-left-radius:24px;
   border-bottom-right-radius:24px;
-  border-bottom-style:none;
-  border-bottom-width:0px;
-  border-image-outset:0px;
-  border-image-repeat:stretch;
-  border-image-slice:100%;
-  border-image-source:none;
-  border-image-width:1;
-  border-left-color:rgb(255, 255, 255);
-  border-left-style:none;
-  border-left-width:0px;
-  border-right-color:rgb(255, 255, 255);
-  border-right-style:none;
-  border-right-width:0px;
-  border-top-color:rgb(255, 255, 255);
+
   border-top-left-radius:24px;
   border-top-right-radius:24px;
-  border-top-style:none;
-  border-top-width:0px;
-  box-sizing:border-box;
-  content:"";
+
+
   display:block;
   height:48px;
-  left:0px;
-  top:0px;
-  transform:matrix(1, 1.74533e-06, -1.74533e-06, 1, 0, 0);
-  transition-delay:0s, 0s, 0s;
-  transition-duration:0.2s, 0.15s, 0.2s;
-  transition-property:transform, background, box-shadow;
-  transition-timing-function:cubic-bezier(0.345, 0.115, 0.135, 1.42), ease-out, ease-out;
-  width:357.75px;
-  z-index:-1;
+  width:387.75px;
   color: white;
-
   margin: 10px 0px
 }
 
 
 /* DISTRIBUTION */
-
 #product-service .delivery-wrapper {
   display: flex;
   flex-direction: row;
@@ -175,8 +142,14 @@
   align-items: center;
   padding: 5px 0px
 }
-#product-service .icon {
-  font-size: 28px
+#product-service .icon-truck {
+  width: 44px;
+  margin-right: 4px;
+}
+#product-service .icon-hourglass {
+  margin-left: 8px;
+  margin-right: 12px;
+  width: 28px;
 }
 #product-service .distribution-text {
   padding: 0px 10px;
