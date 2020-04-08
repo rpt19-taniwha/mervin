@@ -16,9 +16,14 @@ class App extends React.Component {
       productCategory: '',
       versions: {}
     }
+    this.product = this.product.bind(this);
   }
 
   componentDidMount() {
+    this.product();
+  }
+
+  product () {
     var productNumber = window.location.pathname.split('/')[2]
     $.ajax({
       method: 'GET',
@@ -28,13 +33,24 @@ class App extends React.Component {
     })
   }
 
+  sales () {
+    function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+    var sold = numberWithCommas(Math.floor(Math.random() * 2000));
+    return (<div className="sales">{`${sold} sales`}</div>)
+  }
+
   render() {
     return (
       <div className="product-service-container">
         <div className="category-review-wrapper">
-          <div className="category-component">
+          <span className="category-component">
             {this.state.productCategory}
-          </div>
+          </span>
+          <div className="category-divider">|</div>
+          {this.sales()}
+          <div className="category-divider">|</div>
           <Review/>
         </div>
           <div className="name-component">

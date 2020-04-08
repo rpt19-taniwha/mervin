@@ -11,7 +11,7 @@ class Review extends React.Component {
   }
 
   componentDidMount () {
-    this.stars()
+    this.stars();
   }
 
   stars () {
@@ -25,10 +25,19 @@ class Review extends React.Component {
   }
 
   render() {
+    var starCounter = () => {
+      var stars = [];
+      for (var i = 0; i < this.state.stars; i++) {
+        stars.push(<img className="star-icon" src="https://mervin-fec-service.s3-us-west-1.amazonaws.com/star.png"></img>);
+      }
+      return stars;
+    }
     return (
       // Placeholder for Iris's Review Service
       <div className="review-container">
-        ⭐⭐⭐⭐⭐ (1599)
+        <div>
+          {starCounter()}
+        </div>
       </div>
     )
   }

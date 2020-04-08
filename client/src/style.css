@@ -1,5 +1,7 @@
 #product-service .product-service-container {
-  margin: 10px;
+  width: 387.75px;
+  padding: 0px 30px 0px 0px;
+  border: 1px solid black
 }
 /* CATEGORY/REVIEW */
 #product-service .category-review-wrapper {
@@ -12,51 +14,79 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 28px;
-
+  display: flex;
+  letter-spacing: 1px;
+  margin-right:6px;
 }
+#product-service .category-divider {
+  font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color:#e1e3df;
+  margin-right:6px;
+}
+#product-service .sales {
+  font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  display: flex;
+  letter-spacing: 1px;
+  margin-right:6px;
+}
+
 /* REVIEW */
 #product-service .review-container {
   font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 28px;
-
-  padding: 0px 5px;
-
+  margin-right:6px;
+  padding-top: 2px;
+}
+#product-service .star-icon {
+  width: 18px
 }
 
 /* NAME */
 #product-service .name-component {
-  font-size: 26px;
+  font-size: 20px;
   font-family: "Guardian-EgypTT",serif;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 0.35px;
-  line-height: 32px;
-
-
+  line-height: 26px;
+  color:rgb(51, 51, 51);
+  letter-spacing:0.35px;
+  margin-bottom: 14px;
 }
 
 /* PRICE */
 #product-service .price-component {
   font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
   font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  color:rgb(34, 34, 34);
+  margin-bottom: 18px;
 }
-
-
 
 /* SELECTION */
 #product-service .selection-component {
   display: flex;
   flex-direction: column;
+  margin-bottom: 18px;
 }
-.selection-label {
+#product-service .dropdown-wrapper {
+  margin-bottom: 18px;
+}
+#product-service .selection-label {
   font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
   font-weight: 300;
   font-size: 13px;
   line-height: 18px;
-
-  margin: 5px 0px;
-  padding: 0px
+  padding: 0px;
+  margin-bottom: 6px;
 }
 #product-service .selection-dropdown {
   transition: border-color 200ms ease-out,box-shadow 200ms ease-out;
@@ -156,3 +186,4 @@
 #product-service .description-component {
   font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
 }
+
