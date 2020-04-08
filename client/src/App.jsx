@@ -4,6 +4,7 @@ import Selection from './components/Selection.jsx';
 import Distribution from './components/Distribution.jsx';
 import Highlight from './components/Highlight.jsx';
 import $ from 'jquery';
+import './style.css';
 
 class App extends React.Component {
   constructor() {
@@ -21,17 +22,14 @@ class App extends React.Component {
     var productNumber = document.location.pathname.split('/')[2]
     $.ajax({
       method: 'GET',
-      url: `http://127.0.0.1:9000/products/${productNumber}`,
-      success: function(results) {
-        console.log(results)
-        this.setState(results)
-      }.bind(this)
+      url: `/products/${productNumber}`,
+      success: results => { this.setState(results) }
     })
   }
 
   render() {
     return (
-      <div className="product-service-container col-sm-4 col-md-4 col-lg-4">
+      <div className="product-service-container">
         <div className="category-review-wrapper">
           <div className="category-component">
             {this.state.productCategory}
