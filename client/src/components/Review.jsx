@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 class Review extends React.Component {
   constructor() {
     super();
