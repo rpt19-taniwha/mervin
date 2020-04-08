@@ -18,9 +18,9 @@ const ProductModel = mongoose.model('products', ProductSchema);
 const fetch = (productNumber, callback) => {
   ProductModel.findOne({ productNumber }, (err, results) => {
     if (err) {
-      throw err;
+      callback(err);
     } else {
-      callback(results);
+      callback(null, results);
     }
   });
 };
