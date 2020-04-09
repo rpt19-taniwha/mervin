@@ -28,7 +28,7 @@ class Review extends React.Component {
     var starCounter = () => {
       var stars = [];
       for (var i = 0; i < this.state.stars; i++) {
-        stars.push(<img className="star-icon" src="https://mervin-fec-service.s3-us-west-1.amazonaws.com/star.png"></img>);
+        stars.push(<img key={i} className="star-icon" src="https://mervin-fec-service.s3-us-west-1.amazonaws.com/star.png"></img>);
       }
       return stars;
     }
