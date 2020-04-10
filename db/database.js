@@ -27,6 +27,3 @@ const fetch = (productNumber, callback) => {
 
 module.exports = { fetch };
 
-// fetch(549504785, (results) => {
-//   console.log(results)
-// })
