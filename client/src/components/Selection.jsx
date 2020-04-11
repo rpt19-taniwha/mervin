@@ -9,18 +9,20 @@ class Selection extends React.Component {
         {Object.keys(this.props.product.versions).map((version, index) => {
           return (
             <form key={index}>
-              <label className="selection-label">{version.charAt(0).toUpperCase() + version.substring(1)}</label>
-              <select className="selection-dropdown">
-                <option>Select a {version}</option>
-                {this.props.product.versions[version].map((each, index) => {
-                  return (<option key={index}>{each.name}</option>)
-                })}
-              </select>
+              <div className="selection-label">{version.charAt(0).toUpperCase() + version.substring(1)}</div>
+              <div className="dropdown-wrapper">
+                <select className="selection-dropdown">
+                  <option>Select a {version}</option>
+                  {this.props.product.versions[version].map((each, index) => {
+                    return (<option key={index}>{each.name}</option>)
+                  })}
+                </select>
+              </div>
             </form>
           )
         })}
         <form>
-          <label className="selection-label">Quantity</label>
+          <div className="selection-label">Quantity</div>
           <select className="selection-dropdown">
             <option>1</option>
             <option>2</option>

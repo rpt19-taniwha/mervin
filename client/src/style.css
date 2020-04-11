@@ -1,65 +1,93 @@
-.product-service-container {
-  margin: 10px;
-  border: 1px solid black
+#product-service .product-service-container {
+  width: 387.75px;
+  padding: 0px 30px 0px 0px;
 }
 /* CATEGORY/REVIEW */
-.category-review-wrapper {
+#product-service .category-review-wrapper {
   display: flex;
   flex-direction: row;
 }
 /* CATEGORY */
-.category-component {
+#product-service .category-component {
   font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 28px;
-
+  display: flex;
+  letter-spacing: 1px;
+  margin-right:6px;
 }
-/* REVIEW */
-.review-container {
+#product-service .category-divider {
   font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 28px;
+  color:#e1e3df;
+  margin-right:6px;
+}
+#product-service .sales {
+  font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  display: flex;
+  letter-spacing: 1px;
+  margin-right:6px;
+}
 
-  padding: 0px 5px;
-
+/* REVIEW */
+#product-service .review-container {
+  font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  margin-right:6px;
+  padding-top: 2px;
+}
+#product-service .star-icon {
+  width: 18px
 }
 
 /* NAME */
-.name-component {
-  font-size: 26px;
+#product-service .name-component {
+  font-size: 20px;
   font-family: "Guardian-EgypTT",serif;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 0.35px;
-  line-height: 32px;
-
-
+  line-height: 26px;
+  color:rgb(51, 51, 51);
+  letter-spacing:0.35px;
+  margin-bottom: 14px;
 }
 
 /* PRICE */
-.price-component {
+#product-service .price-component {
   font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
   font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  color:rgb(34, 34, 34);
+  margin-bottom: 18px;
 }
-
-
 
 /* SELECTION */
-.selection-component {
+#product-service .selection-component {
   display: flex;
   flex-direction: column;
+
 }
-.selection-label {
+#product-service .dropdown-wrapper {
+  margin-bottom: 18px;
+}
+#product-service .selection-label {
   font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
   font-weight: 300;
   font-size: 13px;
   line-height: 18px;
-
-  margin: 5px 0px;
-  padding: 0px
+  padding: 0px;
+  margin-bottom: 6px;
 }
-.selection-dropdown {
+#product-service .selection-dropdown {
   transition: border-color 200ms ease-out,box-shadow 200ms ease-out;
   box-shadow: 0 1px 6px 0 rgba(34, 34, 34, 0.15);
   display: block;
@@ -80,75 +108,55 @@
   cursor: pointer;
 
 }
-.selection-button {
-  backface-visibility:hidden;
-  background-attachment:scroll;
-  background-clip:border-box;
+#product-service .selection-button {
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+font-size:16px;
   background-color:rgb(34, 34, 34);
-  background-image:none;
-  background-origin:padding-box;
-  background-position-x:0%;
-  background-position-y:0%;
-  background-repeat-x:;
-  background-repeat-y:;
-  background-size:auto;
-  border-bottom-color:rgb(255, 255, 255);
+
+
   border-bottom-left-radius:24px;
   border-bottom-right-radius:24px;
-  border-bottom-style:none;
-  border-bottom-width:0px;
-  border-image-outset:0px;
-  border-image-repeat:stretch;
-  border-image-slice:100%;
-  border-image-source:none;
-  border-image-width:1;
-  border-left-color:rgb(255, 255, 255);
-  border-left-style:none;
-  border-left-width:0px;
-  border-right-color:rgb(255, 255, 255);
-  border-right-style:none;
-  border-right-width:0px;
-  border-top-color:rgb(255, 255, 255);
+
   border-top-left-radius:24px;
   border-top-right-radius:24px;
-  border-top-style:none;
-  border-top-width:0px;
-  box-sizing:border-box;
-  content:"";
+
+
   display:block;
   height:48px;
-  left:0px;
-  top:0px;
-  transform:matrix(1, 1.74533e-06, -1.74533e-06, 1, 0, 0);
-  transition-delay:0s, 0s, 0s;
-  transition-duration:0.2s, 0.15s, 0.2s;
-  transition-property:transform, background, box-shadow;
-  transition-timing-function:cubic-bezier(0.345, 0.115, 0.135, 1.42), ease-out, ease-out;
-  width:357.75px;
-  z-index:-1;
+  width:387.75px;
   color: white;
-
   margin: 10px 0px
 }
 
 
 /* DISTRIBUTION */
-
-.delivery-wrapper {
+#product-service .delivery-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 5px 0px
 }
-.remaining-wrapper {
+#product-service .remaining-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 5px 0px
 }
-.icon {
-  font-size: 28px
+#product-service .icon-truck {
+  width: 44px;
+  margin-right: 4px;
 }
-.distribution-text {
+#product-service .icon-hourglass {
+  margin-left: 8px;
+  margin-right: 12px;
+  width: 28px;
+}
+#product-service .distribution-text {
   padding: 0px 10px;
 }
+
+
+#product-service .description-component {
+  font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
+}
+

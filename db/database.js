@@ -18,15 +18,12 @@ const ProductModel = mongoose.model('products', ProductSchema);
 const fetch = (productNumber, callback) => {
   ProductModel.findOne({ productNumber }, (err, results) => {
     if (err) {
-      throw err;
+      callback(err);
     } else {
-      callback(results);
+      callback(null, results);
     }
   });
 };
 
 module.exports = { fetch };
 
-// fetch(549504785, (results) => {
-//   console.log(results)
-// })
