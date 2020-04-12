@@ -10,6 +10,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
+      id: 0,
       productNumber: 0,
       productName: '',
       productDescription: '',
@@ -28,7 +29,7 @@ class App extends React.Component {
     $.ajax({
       method: 'GET',
       url: `http://ec2-18-144-174-63.us-west-1.compute.amazonaws.com:9000/products/${productNumber}`,
-      success: results => { this.setState(results) },
+      success: results => {this.setState(results)},
       error: err => { console.log(err) }
     })
   }
