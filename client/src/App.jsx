@@ -63,6 +63,7 @@ class App extends React.Component {
         <Highlight product={this.state}/>
         <div className="description-component">
           {this.state.productDescription}
+          <button className="learn-more-button">Learn more about this item</button>
         </div>
       </div>
     )
