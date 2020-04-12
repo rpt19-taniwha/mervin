@@ -122,22 +122,17 @@
   font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
   font-size:16px;
   background-color:rgb(34, 34, 34);
-
-
   border-bottom-left-radius:24px;
   border-bottom-right-radius:24px;
-
   border-top-left-radius:24px;
   border-top-right-radius:24px;
-
-
   display:block;
   height:48px;
   width:387.75px;
   color: white;
   margin: 20px 0px;
   outline: none;
-
+  cursor: pointer;
 }
 
 
