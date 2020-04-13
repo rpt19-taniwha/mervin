@@ -1,5 +1,9 @@
 import { mockData } from './sample/sample_test.js'
 
+// change to functional tests.
+// supertest
+// stubbing function (mock)
+
 const request = require('request');
 
 describe('Server products endpoint request', () => {
