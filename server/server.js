@@ -42,3 +42,5 @@ app.get('/products/:productNumber', (req, res) => {
     }
   });
 });
+
+console.log(process.env.NODE_ENV)
