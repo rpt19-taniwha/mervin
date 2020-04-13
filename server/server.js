@@ -2,6 +2,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
+const compression = require('compression');
 
 const app = express();
 
@@ -15,6 +16,8 @@ app.use(function(req, res, next) {
 });
 
 app.use(express.static(path.join(__dirname, '/../client/dist')));
+
+app.use(compression());
 
 const port = process.env.PORT || 9000;
 
