@@ -7,7 +7,8 @@
     "test": "jest --detectOpenHandles",
     "start": "node server/server.js",
     "server-dev": "nodemon server/server.js",
-    "react-dev": "webpack -d --watch",
+    "build-dev": "webpack -d --watch",
+    "build-prod": "webpack -d --mode=production",
     "eslint": "eslint --ext .jsx --ext .js db/ server/",
     "seed": "node sample_data/seed.js"
   },
