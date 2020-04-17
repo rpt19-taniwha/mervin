@@ -1,10 +1,10 @@
-import Review from './components/Review.jsx';
-import Price from './components/Price.jsx';
-import Selection from './components/Selection.jsx';
-import Distribution from './components/Distribution.jsx';
-import Highlight from './components/Highlight.jsx';
+import React from 'react';
 import $ from 'jquery';
-import './style.css';
+import Review from './Review.jsx';
+import Price from './Price.jsx';
+import Selection from './Selection.jsx';
+import Distribution from './Distribution.jsx';
+import Highlight from './Highlight.jsx';
 
 class App extends React.Component {
   constructor() {
@@ -70,4 +70,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App/>, document.getElementById('product-service'))
+export default App;

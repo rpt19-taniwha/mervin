@@ -1,3 +1,4 @@
+import React from 'react';
 import $ from 'jquery';
 
 class Review extends React.Component {

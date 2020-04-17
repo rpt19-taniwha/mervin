@@ -1,15 +1,9 @@
-class Highlight extends React.Component {
-  constructor() {
-    super();
-  }
-
-  render() {
+function Highlight() {
     return (
       <div className="highlight-component">
 
       </div>
     )
-  }
 }
 
 export default Highlight;

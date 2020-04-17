@@ -1,9 +1,4 @@
-class Distribution extends React.Component {
-  constructor() {
-    super();
-  }
-
-  render() {
+function Distribution() {
     return (
       <div className="distribution-component">
         <div className="delivery-wrapper">
@@ -16,7 +11,6 @@ class Distribution extends React.Component {
         </div>
       </div>
     )
-  }
 }
 
 export default Distribution;
