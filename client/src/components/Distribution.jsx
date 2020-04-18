@@ -1,3 +1,5 @@
+import React from 'react';
+
 function Distribution() {
     return (
       <div className="distribution-component">
