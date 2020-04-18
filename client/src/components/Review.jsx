@@ -24,7 +24,7 @@ class Review extends React.Component {
         var number = Number((Math.round(results[0]['AVG(star_rating)'] * 2) / 2).toFixed(1))
         this.setState({stars: number})
       },
-      error: err => { console.log(err) }
+      error: err => { throw err }
     })
   }
 

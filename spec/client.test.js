@@ -103,7 +103,7 @@ describe('Client Distribution component', () => {
   });
 
   it('should render remaining', async done => {
-    const wrapper = mount(<App/>);
+    const wrapper =  mount(<App/>);
     wrapper.mount();
     var remaining = wrapper.find('.remaining-wrapper');
     expect(remaining).toHaveLength(1);
