@@ -4,7 +4,7 @@
   "description": "mervin's portion of etsy mock",
   "main": "index.js",
   "scripts": {
-    "test": "jest --detectOpenHandles --runInBand",
+    "test": "jest --detectOpenHandles -w=2",
     "start": "node server/server.js",
     "server-dev": "nodemon server/server.js",
     "build-dev": "webpack -d --watch",
