@@ -1,6 +1,6 @@
 version: 2.1
-orbs:
-  node: circleci/node@2.0.2
+docker:
+  image: circleci/node:12.8.0-stretch
 jobs:
   build-and-test:
     executor:
