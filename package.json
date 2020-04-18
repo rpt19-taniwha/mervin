@@ -4,7 +4,7 @@
   "description": "mervin's portion of etsy mock",
   "main": "index.js",
   "scripts": {
-    "test": "jest --detectOpenHandles --maxWorkers=2",
+    "test": "jest --maxWorkers=2 --force-exit",
     "start": "node server/server.js",
     "server-dev": "nodemon server/server.js",
     "build-dev": "webpack -d --watch",
