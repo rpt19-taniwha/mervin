@@ -27,5 +27,6 @@ describe('Database fetch', () => {
       expect(result.versions).toEqual(mockData.versions);
       done();
     });
-  })
+  });
+
 })
