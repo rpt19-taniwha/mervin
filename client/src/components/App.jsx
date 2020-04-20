@@ -42,6 +42,11 @@ class App extends React.Component {
     return (<div className="sales">{`${sold} sales`}</div>)
   }
 
+  description (string) {
+    string = string.replace(/\n/g, "\n\n");
+    return string;
+  }
+
   render() {
     return (
       <div className="product-service-container">
@@ -62,8 +67,9 @@ class App extends React.Component {
         <Distribution/>
         <Highlight product={this.state}/>
         <div className="description-component">
-          {this.state.productDescription}
+          {this.description(this.state.productDescription)}
           <button className="learn-more-button">Learn more about this item</button>
+          <div className="fade"></div>
         </div>
       </div>
     )
