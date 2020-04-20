@@ -5,6 +5,7 @@ import Price from './Price.jsx';
 import Selection from './Selection.jsx';
 import Distribution from './Distribution.jsx';
 import Highlight from './Highlight.jsx';
+import Description from './Description.jsx';
 
 class App extends React.Component {
   constructor() {
@@ -42,11 +43,6 @@ class App extends React.Component {
     return (<div className="sales">{`${sold} sales`}</div>)
   }
 
-  description (string) {
-    string = string.replace(/\n/g, "\n\n");
-    return string;
-  }
-
   render() {
     return (
       <div className="product-service-container">
@@ -66,11 +62,7 @@ class App extends React.Component {
         <Selection product={this.state}/>
         <Distribution/>
         <Highlight product={this.state}/>
-        <div className="description-component">
-          {this.description(this.state.productDescription)}
-          <button className="learn-more-button">Learn more about this item</button>
-          <div className="fade"></div>
-        </div>
+        <Description product={this.state}/>
       </div>
     )
   }

@@ -173,4 +173,48 @@
   font-weight: 300;
   line-height: 28px;
   white-space: pre-wrap;
+  display: flex;
+  flex-direction: column;
+}
+
+#product-service .learn-more-button {
+  border-radius: 24px;
+  cursor:pointer;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:13px;
+  font-weight:700;
+  height:36px;
+  border-style: none;
+  outline-style:none;
+  padding-bottom:9px;
+  padding-left:15px;
+  padding-right:15px;
+  padding-top:9px;
+  text-align:center;
+  width: 197.594px;
+  align-self: center;
+}
+#product-service .learn-more-button:hover {
+  background-color: rgba(34, 34, 34, 0.07);
+}
+
+#product-service .less {
+  border-radius: 24px;
+  cursor:pointer;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:13px;
+  font-weight:700;
+  height:36px;
+  border-style: none;
+  outline-style:none;
+  padding-bottom:9px;
+  padding-left:15px;
+  padding-right:15px;
+  padding-top:9px;
+  text-align:center;
+  width: 57.7031px;
+  align-self: center;
+}
+#product-service .less:hover {
+  background-color: rgba(34, 34, 34, 0.07);
 }
