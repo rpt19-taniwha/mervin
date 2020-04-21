@@ -116,6 +116,7 @@
   text-overflow: "";
   cursor: pointer;
   outline: none;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
 
 }
 #product-service .selection-button {
