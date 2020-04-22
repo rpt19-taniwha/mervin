@@ -1,15 +1,11 @@
-class Highlight extends React.Component {
-  constructor() {
-    super();
-  }
+import React from 'react';
 
-  render() {
+function Highlight() {
     return (
       <div className="highlight-component">
 
       </div>
     )
-  }
 }
 
 export default Highlight;

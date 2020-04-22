@@ -1,61 +1,55 @@
+/**
+ * @jest-environment node
+ */
+
 import { mockData } from './sample/sample_test.js'
 
-const request = require('request');
+const app = require('../server/app.js');
+const request = require('supertest');
 
-describe('Server products endpoint request', () => {
-  it('GET /products/:productNumber should return 200', done => {
-    request({
-      method: 'GET',
-      url: 'http://127.0.0.1:9000/products/549504785',
-    }, function(error, response, body) {
-      expect(response.statusCode).toEqual(200);
-      done();
-    })
+describe('Server products endpoint GET requests', () => {
+
+  it('should return 200', async done => {
+    const res = await request(app).get(`/products/${mockData.productNumber}`);
+    expect(res.statusCode).toBe(200);
+    done();
   });
 
-  it('GET /products/:productNumber should return product object with model keys', done => {
-    request({
-      method: 'GET',
-      url: 'http://127.0.0.1:9000/products/549504785',
-    }, function(error, response, body) {
-      var result = JSON.parse(body);
-      expect(typeof result).toBe('object');
-      expect(result).toHaveProperty('productNumber');
-      expect(result).toHaveProperty('productName');
-      expect(result).toHaveProperty('productDescription');
-      expect(result).toHaveProperty('productCategory');
-      expect(result).toHaveProperty('versions');
-      done();
-    })
+  it('should return an empty object if product doesn\'t exist', async done => {
+    const res = await request(app).get(`/products/123456789`);
+    expect(res.body).toEqual({});
+    done();
   });
 
-  it('GET /products/:productNumber should return product object with correct key/value pairs', done => {
-    request({
-      method: 'GET',
-      url: 'http://127.0.0.1:9000/products/549504785',
-    }, function(error, response, body) {
-      var result = JSON.parse(body);
-      expect(result.productNumber).toEqual(mockData.productNumber);
-      expect(result.productName).toEqual(mockData.productName);
-      expect(result.productDescription).toEqual(mockData.productDescription);
-      expect(result.productCategory).toEqual(mockData.productCategory);
-      expect(result.versions).toEqual(mockData.versions);
-      done();
-    })
+  it('should return product object with model keys', async done => {
+    const res = await request(app).get(`/products/${mockData.productNumber}`);
+    expect(typeof res.body).toBe('object');
+    expect(res.body).toHaveProperty('productNumber');
+    expect(res.body).toHaveProperty('productName');
+    expect(res.body).toHaveProperty('productDescription');
+    expect(res.body).toHaveProperty('productCategory');
+    expect(res.body).toHaveProperty('versions');
+    done();
   });
-});
 
-describe('Server listing endpoint request', () => {
-  it('GET /listing/:productNumber should return 200', done => {
-    request({
-      method: 'GET',
-      url: 'http://127.0.0.1:9000/listing/549504785',
-    }, function(error, response, body) {
-      expect(response.statusCode).toEqual(200);
-      done();
-    })
+  it('should return product object with correct key/value pairs', async done => {
+    const res = await request(app).get(`/products/${mockData.productNumber}`);
+    expect(res.body.productNumber).toEqual(mockData.productNumber);
+    expect(res.body.productName).toEqual(mockData.productName);
+    expect(res.body.productDescription).toEqual(mockData.productDescription);
+    expect(res.body.productCategory).toEqual(mockData.productCategory);
+    expect(res.body.versions).toEqual(mockData.versions);
+    done();
   });
-});
 
+})
 
+describe('Server listing endpoint GET requests', () => {
 
+  it('should return 200', async done => {
+    const res = await request(app).get(`/listing/${mockData.productNumber}`);
+    expect(res.statusCode).toBe(200);
+    done();
+  })
+
+})

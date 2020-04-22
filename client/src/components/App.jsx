@@ -1,15 +1,17 @@
-import Review from './components/Review.jsx';
-import Price from './components/Price.jsx';
-import Selection from './components/Selection.jsx';
-import Distribution from './components/Distribution.jsx';
-import Highlight from './components/Highlight.jsx';
+import React from 'react';
 import $ from 'jquery';
-import './style.css';
+import Review from './Review.jsx';
+import Price from './Price.jsx';
+import Selection from './Selection.jsx';
+import Distribution from './Distribution.jsx';
+import Highlight from './Highlight.jsx';
+import Description from './Description.jsx';
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
+      id: 0,
       productNumber: 0,
       productName: '',
       productDescription: '',
@@ -28,8 +30,8 @@ class App extends React.Component {
     $.ajax({
       method: 'GET',
       url: `http://ec2-18-144-174-63.us-west-1.compute.amazonaws.com:9000/products/${productNumber}`,
-      success: results => { this.setState(results) },
-      error: err => { console.log(err) }
+      success: results => {this.setState(results)},
+      error: err => { throw err }
     })
   }
 
@@ -60,12 +62,10 @@ class App extends React.Component {
         <Selection product={this.state}/>
         <Distribution/>
         <Highlight product={this.state}/>
-        <div className="description-component">
-          {this.state.productDescription}
-        </div>
+        <Description product={this.state}/>
       </div>
     )
   }
 }
 
-ReactDOM.render(<App/>, document.getElementById('product-service'))
+export default App;

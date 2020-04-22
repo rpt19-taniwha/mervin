@@ -16,7 +16,12 @@
   display: flex;
   letter-spacing: 1px;
   margin-right:6px;
+  cursor: pointer;
 }
+#product-service .category-component:hover{
+  text-decoration: underline;
+}
+
 #product-service .category-divider {
   font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
   font-weight: 300;
@@ -33,6 +38,10 @@
   display: flex;
   letter-spacing: 1px;
   margin-right:6px;
+  cursor: pointer;
+}
+#product-service .sales:hover {
+  text-decoration: underline;
 }
 
 /* REVIEW */
@@ -43,6 +52,7 @@
   line-height: 28px;
   margin-right:6px;
   padding-top: 2px;
+  cursor: pointer;
 }
 #product-service .star-icon {
   width: 18px
@@ -50,9 +60,9 @@
 
 /* NAME */
 #product-service .name-component {
-  font-size: 20px;
+  font-size: 26px;
   font-family: "Guardian-EgypTT",serif;
-  font-weight: 500;
+  font-weight: 300;
   letter-spacing: 0.35px;
   line-height: 26px;
   color:rgb(51, 51, 51);
@@ -74,7 +84,6 @@
 #product-service .selection-component {
   display: flex;
   flex-direction: column;
-
 }
 #product-service .dropdown-wrapper {
   margin-bottom: 18px;
@@ -106,26 +115,25 @@
   text-indent: 0.01px;
   text-overflow: "";
   cursor: pointer;
+  outline: none;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
 
 }
 #product-service .selection-button {
   font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
-font-size:16px;
+  font-size:16px;
   background-color:rgb(34, 34, 34);
-
-
   border-bottom-left-radius:24px;
   border-bottom-right-radius:24px;
-
   border-top-left-radius:24px;
   border-top-right-radius:24px;
-
-
   display:block;
   height:48px;
   width:387.75px;
   color: white;
-  margin: 10px 0px
+  margin: 20px 0px;
+  outline: none;
+  cursor: pointer;
 }
 
 
@@ -145,18 +153,81 @@ font-size:16px;
 #product-service .icon-truck {
   width: 44px;
   margin-right: 4px;
+  margin-bottom: 15px;
 }
 #product-service .icon-hourglass {
   margin-left: 8px;
   margin-right: 12px;
   width: 28px;
+  margin-bottom: 15px;
+
 }
 #product-service .distribution-text {
   padding: 0px 10px;
+  color:rgb(34, 34, 34);
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:13px;
+  font-weight:300;
+
+  margin-bottom: 15px;
 }
 
 
 #product-service .description-component {
   font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
+  color:rgb(34, 34, 34);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 28px;
+  white-space: pre-wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
+#product-service .learn-more-button {
+  border-radius: 24px;
+  display: block;
+  cursor:pointer;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:13px;
+  font-weight:700;
+  height:36px;
+  border-style: none;
+  outline-style:none;
+  text-align:center;
+  width: 197.594px;
+  align-self: center;
+  position: relative;
+  bottom: 4em;
+}
+#product-service .learn-more-button:hover {
+  background-color: rgba(34, 34, 34, 0.07);
+}
+
+#product-service .less {
+  border-radius: 24px;
+  cursor:pointer;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:13px;
+  font-weight:700;
+  height:36px;
+  border-style: none;
+  outline-style:none;
+
+  text-align:center;
+  width: 57.7031px;
+  align-self: center;
+}
+#product-service .less:hover {
+  background-color: rgba(34, 34, 34, 0.07);
+}
+#product-service .fadeout {
+  position: relative;
+  bottom: 4em;
+  height: 4em;
+  background: -webkit-linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+  );
+}

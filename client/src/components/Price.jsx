@@ -1,3 +1,5 @@
+import React from 'react';
+
 class Price extends React.Component {
   constructor() {
     super();
